@@ -6,7 +6,7 @@ class LRUCache:
 
     def get(self, key: str) -> str:
         if key in self.data:
-            val = self.data[key][:]
+            val = self.data[key]
             del self.data[key]
             self.data[key] = val
             return val
